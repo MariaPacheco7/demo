@@ -41,7 +41,7 @@ public class ProductControllerTest {
 	
 	@Test
 	@DisplayName("GET /product/1 - Found")
-	void testGetProductByIdFound() throws Exception {
+	public void testGetProductByIdFound() throws Exception {
 		// Setup our mocked service
 		Product mockProduct = new Product(1,"Product Name", 10, 1);
 		doReturn(Optional.of(mockProduct)).when(service).findById(1);
@@ -66,7 +66,7 @@ public class ProductControllerTest {
 	
 	@Test
 	@DisplayName("GET /product/1 - Not Found")
-	void testGetProductByIdNotFound() throws Exception {
+	public void testGetProductByIdNotFound() throws Exception {
 		// Setup our mocked service
 		doReturn(Optional.empty()).when(service).findById(1);
 		
