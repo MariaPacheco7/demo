@@ -1,4 +1,4 @@
-package com.globomantics.exampleservice;
+package com.globomantics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -28,6 +28,13 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
+	public Product(String name, Integer quantity) {
+		this.id = 1;
+		this.name = name;
+		this.quantity = quantity;
+		this.version = 1;
+	}
+
 	public Product(Integer id, String name, Integer quantity, Integer version) {
 		this.id = id;
 		this.name = name;
